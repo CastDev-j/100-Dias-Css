@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dia 2</title>
+</head>
+<body>
+    <div class="frame">
+            <input type="checkbox" id="state-menu-icon">
+            <label class="menu-icon" for="state-menu-icon">
+                <div class="line line-1 no-animation"></div>
+                <div class="line line-2 no-animation"></div>
+                <div class="line line-3 no-animation"></div>
+            </label>
+    </div>
+
+    <script>
+        document.querySelector('.menu-icon').addEventListener('click', function(element) {
+            document.querySelectorAll('.no-animation').forEach(function(element) {
+                element.classList.remove('no-animation');
+            });
+        });
+    </script>
+</body>
+</html>
